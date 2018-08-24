@@ -1,4 +1,25 @@
-{% for faq in block.faqs %}
-    <h1>{{ faq.question }}</h1>
-    {{ faq.answer.render|raw }}
-{% endfor %}
+<div class="panel-group" id="faqs--{{ block.id }}">
+
+    {% for faq in block.faqs %}
+        <div class="panel panel-default ">
+
+            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
+                 data-parent="#faqs--{{ block.id }}" data-target="#faq__question--{{ question.id }}">
+
+                <h4 class="panel-title">
+                    <a href="#" class="ing">{{ faq.question }}</a>
+                </h4>
+
+            </div>
+
+            <div id="faq__question--{{ question.id }}" class="panel-collapse collapse" style="height: 0;">
+
+                <div class="panel-body">
+                    {{ faq.answer.render|raw }}
+                </div>
+
+            </div>
+        </div>
+    {% endfor %}
+
+</div>

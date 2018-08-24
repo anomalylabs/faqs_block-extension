@@ -22,7 +22,7 @@ class AnomalyExtensionFaqsBlockCreateFaqsBlockFields extends Migration
         'answer'   => [
             'type'   => 'anomaly.field_type.wysiwyg',
             'config' => [
-                'configuration' => 'simple',
+                'configuration' => 'basic',
             ],
         ],
         'faqs'     => [
