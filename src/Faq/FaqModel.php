@@ -3,7 +3,7 @@
 use Anomaly\FaqsBlockExtension\Faq\Contract\FaqInterface;
 use Anomaly\Streams\Platform\Model\FaqsBlock\FaqsBlockFaqsEntryModel;
 
-class FaqModel extends FaqBlockFaqsEntryModel implements FaqInterface
+class FaqModel extends FaqsBlockFaqsEntryModel implements FaqInterface
 {
 
 }

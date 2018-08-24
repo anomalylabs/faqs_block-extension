@@ -1,6 +1,7 @@
 <?php namespace Anomaly\FaqsBlockExtension;
 
 use Anomaly\BlocksModule\Block\BlockExtension;
+use Anomaly\FaqsBlockExtension\Block\BlockModel;
 
 /**
  * Class FaqsBlockExtension
@@ -26,5 +27,12 @@ class FaqsBlockExtension extends BlockExtension
      * @var string
      */
     protected $view = 'anomaly.extension.faqs_block::content';
+
+    /**
+     * The block model.
+     *
+     * @var string
+     */
+    protected $model = BlockModel::class;
 
 }

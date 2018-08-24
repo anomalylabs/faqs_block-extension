@@ -29,6 +29,7 @@ class AnomalyExtensionFaqsBlockCreateFaqsBlockFields extends Migration
             'type'   => 'anomaly.field_type.repeater',
             'config' => [
                 'related' => 'faqs_block.faqs',
+                'add_row' => 'anomaly.extension.faqs_block::field.faqs.add_row',
             ],
         ],
     ];

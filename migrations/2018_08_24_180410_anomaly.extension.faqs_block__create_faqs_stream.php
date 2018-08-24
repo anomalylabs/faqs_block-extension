@@ -33,7 +33,7 @@ class AnomalyExtensionFaqsBlockCreateFaqsStream extends Migration
             'required'     => true,
         ],
         'answer'   => [
-            'unique'   => true,
+            'translatable' => true,
             'required' => true,
         ],
     ];
