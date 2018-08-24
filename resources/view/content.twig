@@ -1,0 +1,4 @@
+{% for faq in block.faqs %}
+    <h1>{{ faq.question }}</h1>
+    {{ faq.answer.render|raw }}
+{% endfor %}
