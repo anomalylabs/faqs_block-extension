@@ -1,7 +1,7 @@
 {
     "name": "anomaly/faq_block-extension",
     "type": "streams-addon",
-    "description": "An addon dropdown field type.",
+    "description": "Display frequently asked questions.",
     "keywords": [
         "streams addon",
         "block type",
