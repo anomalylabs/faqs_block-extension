@@ -1,5 +1,5 @@
 {
-    "name": "anomaly/faq_block-extension",
+    "name": "anomaly/faqs_block-extension",
     "type": "streams-addon",
     "description": "Display frequently asked questions.",
     "keywords": [
