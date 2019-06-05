@@ -4,7 +4,7 @@
         <div class="panel panel-default ">
 
             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse"
-                 data-parent="#faqs--{{ block.id }}" data-target="#faq__question--{{ question.id }}">
+                 data-parent="#faqs--{{ block.id }}" data-target="#faq__question--{{ faq.id }}">
 
                 <h4 class="panel-title">
                     <a href="#" class="ing">{{ faq.question }}</a>
@@ -12,7 +12,7 @@
 
             </div>
 
-            <div id="faq__question--{{ question.id }}" class="panel-collapse collapse" style="height: 0;">
+            <div id="faq__question--{{ faq.id }}" class="panel-collapse collapse" style="height: 0;">
 
                 <div class="panel-body">
                     {{ faq.answer.render|raw }}
